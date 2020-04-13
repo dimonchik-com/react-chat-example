@@ -1,0 +1,45 @@
+.controls {
+  flex-grow: 1;
+  align-items: flex-end;
+
+  input,
+  button {
+    height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 1px rgba(36, 91, 140, 0.15);
+    border: none;
+  }
+
+  input {
+    border-radius: 9999px;
+    background: white;
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+
+  button {
+    background: #3794ff;
+    border-radius: 3px;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Helvetica;
+    color: #e6e6e6;
+  }
+
+  .controls-wrap{padding: 0px 10px 0px 5px;}
+
+  .controls-typing{
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    color: gray;
+    font-style: italic;
+  }
+  .controls-flex{display: flex;}
+} 
