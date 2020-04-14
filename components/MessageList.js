@@ -1,13 +1,19 @@
-import React from 'react';
-import Message from './Message';
-import './../styles/controls.scss';
+import React from "react";
+import Message from "./Message";
+import "./../styles/controls.scss";
 
-export default ({messageList})=>{
+export default ({ messageList }) => {
   return (
-    <>
-      {messageList.map((message, index) => {
-        return <Message prevMessage={messageList[index-1]} message={message} key={message.id} />
-      })}
-    </>
-  )
-}
+      <>
+        {messageList.map((message, index) => {
+          return (
+              <Message
+                  prevMessage={messageList[index - 1]}
+                  message={message}
+                  key={message.id}
+              />
+          );
+        })}
+      </>
+  );
+};
