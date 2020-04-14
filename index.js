@@ -15,7 +15,7 @@ class App extends Component {
                 "#6C65A9",
                 "#C44F69",
                 "#FF6565",
-            ], 
+            ],  
         };
     }
 
