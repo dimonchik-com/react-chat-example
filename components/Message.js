@@ -16,15 +16,15 @@ export default ({ message, prevMessage }) => {
   };
 
   return (
-      <div className={`wrapperMessage`}>
+      <div className="wrapperMessage">
         <div className={`message ${self} ${withArrow}`}>
           {self ? null : (
-              <div className={`name`} style={{ color: message.color }}>
+              <div className="name" style={{ color: message.color }}>
                 {message.user}
               </div>
           )}
-          <div className={`content`}>{message.content}</div>
-          <div className={`time`}>{getDate(message.timestamp)}</div>
+          <div className="content">{message.content}</div>
+          <div className="time">{getDate(message.timestamp)}</div>
         </div>
       </div>
   );
