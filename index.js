@@ -26,7 +26,7 @@ class App extends Component {
                 Math.floor(Math.random() * this.state.randomColor.length)
                 ];
             messageList.push(messageReceived);
-            this.setState({ ...this.state, messageList: messageList });
+            this.setState({ ...this.state, messageList });
         });
     }
 
