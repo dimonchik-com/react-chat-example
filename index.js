@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { Controls, MessageList } from "./components/index.js";
+import { Controls, MessageList } from "./components";
 import "./style.scss";
 
 class App extends Component {
