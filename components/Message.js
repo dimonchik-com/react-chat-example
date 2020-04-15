@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ message, prevMessage }) => {
+export const Message = ({ message, prevMessage }) => {
   let self = message.user == "Me" ? "self" : "";
   let withArrow =
       !prevMessage || message.user != prevMessage.user ? "with-arrow" : "";
