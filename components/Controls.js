@@ -22,7 +22,7 @@ function reducer(state, action) {
   }
 }
 
-export default () => {
+export const Controls = () => {
   const refInput = useRef(null);
   const [state, dispatch] = useReducer(reducer, initialState);
   const actualState = useRef({ state: {}, dispatch: null });
