@@ -33,10 +33,10 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className={"panel-body"}>
+                <div className="panel-body">
                     <MessageList messageList={this.state.messageList} />
                 </div>
-                <div className={"panel-control"}>
+                <div className="panel-control">
                     <Controls />
                 </div>
             </>
