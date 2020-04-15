@@ -21,7 +21,7 @@ class App extends Component {
 
     componentDidMount() {
         window.Chat.onMessage((messageReceived) => {
-            let messageList = [...this.state.messageList];
+            const messageList = [...this.state.messageList];
             messageReceived.color = this.state.randomColor[
                 Math.floor(Math.random() * this.state.randomColor.length)
                 ];
@@ -33,10 +33,10 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className={`panel-body`}>
+                <div className={"panel-body"}>
                     <MessageList messageList={this.state.messageList} />
                 </div>
-                <div className={`panel-control`}>
+                <div className={"panel-control"}>
                     <Controls />
                 </div>
             </>
