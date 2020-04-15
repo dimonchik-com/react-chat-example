@@ -2,7 +2,7 @@ import React from "react";
 import Message from "./Message";
 import "./../styles/controls.scss";
 
-export default ({ messageList }) => {
+export const MessageList = ({ messageList }) => {
   return (
       <>
         {messageList.map((message, index) => {
