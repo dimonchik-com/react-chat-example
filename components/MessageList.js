@@ -1,6 +1,6 @@
 import React from "react";
-import Message from "./Message";
-import "./../styles/controls.scss";
+import {Message} from "./Message";
+import "./../styles/messageList.scss";
 
 export const MessageList = ({ messageList }) => {
   return (

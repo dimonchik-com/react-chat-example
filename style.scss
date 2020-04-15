@@ -1,58 +1,8 @@
-$timestamp_color: #b1b1b1;
-$blue: #3794ff;
-
 body {
   background: #f5fbff;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
 }
-
-.message {
-  position: relative;
-  padding: 12px 15px;
-  background: white;
-  border-radius: 3px;
-  filter: drop-shadow(0 1px 2px rgba(36, 91, 140, 0.3));
-  line-height: 150%;
-  margin: 0 0 10px 0;
-  float: left;
-  max-width: 55%;
-
-  &.with-arrow {
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translateX(-10px);
-      width: 0; 
-      height: 0; 
-      border-bottom: 17px solid transparent; 
-      border-right: 17px solid white; 
-    }
-  }
-
-  &.self {
-    background: $blue;
-    color: white;
-    float: right;
-
-    &.with-arrow {
-      &:before {
-        left: initial;
-        right: 0;
-        transform: translateX(10px);
-        border-right: 0;
-        border-left: 17px solid $blue; 
-      }
-    }
-  }
-
-  .time {
-    text-align: right;
-  }
-}
-
 .panel-body{
   overflow-y:auto;
   position:absolute;
@@ -70,5 +20,3 @@ body {
   left: 0;
   padding: 0px 10px 15px 10px;
 }
-
-.wrapperMessage{float: none; clear: both;}

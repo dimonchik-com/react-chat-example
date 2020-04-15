@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useReducer } from "react";
+import "./../styles/controls.scss";
 
 const initialState = { listUsers: {} };
 
@@ -56,6 +57,9 @@ export const Controls = () => {
         }, 8e3);
       }
     });
+    return {
+      // remove subscription on window.Chat.onTyping
+    }
   }, []);
 
   return (
