@@ -57,7 +57,7 @@ export const Controls = () => {
         }, 8e3);
       }
     });
-    return {
+    return ()=>{
       // remove subscription on window.Chat.onTyping
     }
   }, []);
