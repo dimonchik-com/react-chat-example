@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { render } from "react-dom";
 import { Controls, MessageList } from "./components";
 import "./style.scss";
@@ -15,15 +15,21 @@ const App = () => {
       "#FF6565",
     ],
   });
+  const actualState = useRef({state,setState});
+  actualState.current={state,setState};
 
   useEffect(() => {
     window.Chat.onMessage((messageReceived) => {
+      const [state, setState]=[actualState.current.state, actualState.current.setState];
       const messageList = [...state.messageList];
       messageReceived.color =
         state.randomColor[Math.floor(Math.random() * state.randomColor.length)];
       messageList.push(messageReceived);
       setState({ ...state, messageList });
     });
+    return ()=>{
+      // remove subscription on window.Chat.onMessage
+    }
   }, []);
 
   return (
